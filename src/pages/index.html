@@ -17,13 +17,38 @@
   </body>
 
   <script type="text/babel">
-    function Header() {}
+    function Header() {
+      return (
+        <div className="content-header">
+          <header className="header">
+            <div className="header-logo">
+              <a href="#logo">Portfólio</a>
+            </div>
+            <nav id="header-nav">
+              <ul id="header-list">
+                <li className="header-item">Início</li>
+                <li className="header-item">Sobre</li>
+                <li className="header-item">Habilidades</li>
+                <li className="header-item">Projetos</li>
+                <li className="header-item header-contato">Contato</li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      );
+    }
 
     function Main() {}
 
     function Footer() {}
 
-    function App() {}
+    function App() {
+      return (
+        <div>
+          <Header />
+        </div>
+      );
+    }
 
     ReactDOM.createRoot(document.getElementById('root')).render(<App />);
   </script>
