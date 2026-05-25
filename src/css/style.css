@@ -81,11 +81,14 @@ li.header-contato {
   padding: 15px 25px;
   border-radius: 10px;
   border: 1px solid black;
+  background-color: black;
+  color: white;
 }
 
 li.header-contato:hover {
-  background-color: black;
+  background-color: rgb(43, 43, 43);
   color: white;
+  transform: scale(1.02);
 }
 
 .header-item:hover {
