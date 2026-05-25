@@ -1,0 +1,23 @@
+@media (max-width: 1300px) {
+  .header {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .header {
+    width: 90%;
+  }
+
+  #header-titulo {
+    font-size: 1.2rem;
+  }
+
+  #logo {
+    width: 55px;
+  }
+
+  .header-item {
+    font-size: 0.9rem;
+  }
+}
