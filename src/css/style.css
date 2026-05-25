@@ -5,8 +5,9 @@
 }
 
 .content-header {
+  position: relative;
   height: 100vh;
-  background: linear-gradient(#838383, #a8a8a8, #bebebe, #808080);
+  background: linear-gradient(#1a1a1a, #252525, #141414, #070707);
 }
 
 .position-header {
