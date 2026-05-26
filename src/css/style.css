@@ -4,23 +4,17 @@
   box-sizing: border-boxd;
 }
 
-.content-header {
-  position: relative;
-  height: 100vh;
-  background: linear-gradient(#1a1a1a, #252525, #141414, #070707);
-}
-
-.position-header {
-  padding-top: 20px;
-}
-
 .header {
+  position: fixed;
+  top: 25px;
+  right: 0;
+  left: 0;
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0px auto;
-  padding: 12px;
+  padding: 10px;
   background-color: white;
   border-radius: 18px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.192);
