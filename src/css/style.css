@@ -4,6 +4,10 @@
   box-sizing: border-boxd;
 }
 
+body {
+  background: linear-gradient(#080808, #080808);
+}
+
 .header {
   position: fixed;
   top: 25px;
@@ -19,7 +23,7 @@
   border-radius: 18px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.192);
   transition: 0.4s;
-  animation: entrada 1s ease;
+  animation: entrada 0.8s ease;
 }
 
 @keyframes entrada {
@@ -30,7 +34,7 @@
 
   from {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.06);
   }
 }
 
@@ -87,4 +91,101 @@ li.header-contato:hover {
 
 .header-item:hover {
   cursor: pointer;
+}
+
+/* Conteúdo - Main */
+
+.content-main {
+  background: linear-gradient(rgb(8, 8, 8), rgb(10, 10, 10));
+  height: 100vh;
+}
+
+.main {
+  margin-top: 120px;
+}
+
+#content-inicio {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  height: 400px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 80px 25px 25px 25px;
+  color: white;
+}
+
+#inicio-paragrafo {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  animation: entradaInicio 0.6s ease-in;
+}
+
+#inicio-titulo {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 4.5rem;
+  animation: entradaInicio 0.7s ease-in;
+}
+
+.content-contagem {
+  padding: 15px;
+  width: 30%;
+  background-color: white;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.322);
+  border-radius: 25px;
+  margin-top: 50px;
+  animation: entradaInicio 0.8s ease-in;
+  transition: 0.5s;
+}
+
+.content-contagem:hover {
+  box-shadow: none;
+  background-color: rgb(36, 36, 36);
+  box-shadow: 1px 1px 15px rgba(31, 31, 31, 0.651);
+}
+
+.content-contagem:hover #quantidade-projetos,
+.content-contagem:hover #projetos-completos,
+.content-contagem:hover #span-projeto {
+  color: white;
+}
+
+#span-projeto {
+  font-weight: 300;
+  position: relative;
+  bottom: 15px;
+  font-size: 2rem;
+}
+
+#quantidade-projetos {
+  font-weight: 300;
+  font-size: 5rem;
+}
+
+#projetos-completos {
+  font-weight: 300;
+  margin-left: 25px;
+  font-size: 1.5rem;
+}
+
+#span-projeto,
+#quantidade-projetos,
+#projetos-completos {
+  color: black;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  animation: entradaInicio 0.8s ease-in;
+}
+
+@keyframes entradaInicio {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
