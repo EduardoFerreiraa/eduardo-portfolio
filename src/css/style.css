@@ -106,76 +106,93 @@ li.header-contato:hover {
 
 #content-inicio {
   display: flex;
-  flex-direction: row;
   align-items: end;
   height: 400px;
-  margin: 0 auto;
+  margin: 250px auto;
   width: 80%;
-  padding: 80px 25px 25px 25px;
+  padding: 25px;
   color: white;
+  gap: 150px;
 }
 
 #inicio-paragrafo {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  font-size: 2.5rem;
+  font-size: 2rem;
   animation: entradaInicio 0.6s ease-in;
 }
 
 #inicio-titulo {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 4.5rem;
-  animation: entradaInicio 0.7s ease-in;
+  animation: entradaInicio 0.7s ease;
 }
 
-.content-contagem {
-  padding: 15px;
-  width: 30%;
+#frase-curta {
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+#inicio-paragrafo,
+#inicio-titulo,
+#frase-curta {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.content-count {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+}
+
+.count {
+  padding: 20px;
+  width: 100%;
   background-color: white;
   box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.322);
   border-radius: 25px;
   margin-top: 50px;
-  animation: entradaInicio 0.8s ease-in;
-  transition: 0.5s;
+  animation: entradaInicio 1s ease;
+  transition: 0.45s;
 }
 
-.content-contagem:hover {
+.count:hover {
+  transform: scale(1.03);
   box-shadow: none;
   background-color: rgb(36, 36, 36);
   box-shadow: 1px 1px 15px rgba(31, 31, 31, 0.651);
 }
 
-.content-contagem:hover #quantidade-projetos,
-.content-contagem:hover #projetos-completos,
-.content-contagem:hover #span-projeto {
+.count:hover .quantidade,
+.count:hover .projetos-completos,
+.count:hover .span-projeto {
   color: white;
 }
 
-#span-projeto {
+.span-projeto {
   font-weight: 300;
   position: relative;
   bottom: 15px;
   font-size: 2rem;
 }
 
-#quantidade-projetos {
+.quantidade {
   font-weight: 300;
   font-size: 5rem;
 }
 
-#projetos-completos {
+.projetos-completos {
   font-weight: 300;
   margin-left: 25px;
   font-size: 1.5rem;
 }
 
-#span-projeto,
-#quantidade-projetos,
-#projetos-completos {
+.span-projeto,
+.quantidade,
+.projetos-completos {
   color: black;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  animation: entradaInicio 0.8s ease-in;
+  animation: entradaInicio 1s ease;
 }
 
 @keyframes entradaInicio {
@@ -188,4 +205,16 @@ li.header-contato:hover {
     opacity: 0;
     transform: translateY(-10px);
   }
+}
+
+.content-minhaFoto img {
+  box-shadow: 1px 1px 15px rgba(128, 128, 128, 0.205);
+  border-radius: 25px;
+  width: 400px;
+  transition: 0.5s;
+  animation: entradaInicio 1s ease;
+}
+
+.content-minhaFoto img:hover {
+  transform: translateY(-8px);
 }
