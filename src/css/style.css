@@ -24,6 +24,7 @@ body {
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.192);
   transition: 0.4s;
   animation: entrada 0.8s ease;
+  z-index: 10;
 }
 
 @keyframes entrada {
@@ -108,7 +109,7 @@ li.header-contato:hover {
   display: flex;
   align-items: end;
   height: 400px;
-  margin: 250px auto;
+  margin: 20em auto;
   width: 80%;
   padding: 25px;
   color: white;
@@ -118,7 +119,7 @@ li.header-contato:hover {
 #inicio-paragrafo {
   font-weight: bolder;
   font-size: 2rem;
-  animation: entradaInicio 0.6s ease-in;
+  animation: entradaInicio 0.6s ease;
 }
 
 #inicio-titulo {
@@ -128,8 +129,9 @@ li.header-contato:hover {
 }
 
 #frase-curta {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.1rem;
+  animation: entradaInicio 0.75s ease;
 }
 
 #inicio-paragrafo,
@@ -156,7 +158,8 @@ li.header-contato:hover {
   transition: 0.45s;
 }
 
-.count:hover {
+.count:hover,
+#veja-projetos:hover {
   transform: scale(1.03);
   box-shadow: none;
   background-color: rgb(36, 36, 36);
@@ -165,7 +168,8 @@ li.header-contato:hover {
 
 .count:hover .quantidade,
 .count:hover .projetos-completos,
-.count:hover .span-projeto {
+.count:hover .span-projeto,
+#veja-projetos:hover a {
   color: white;
 }
 
@@ -189,7 +193,9 @@ li.header-contato:hover {
 
 .span-projeto,
 .quantidade,
-.projetos-completos {
+.projetos-completos,
+#veja-projetos,
+#veja-projetos a {
   color: black;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   animation: entradaInicio 1s ease;
@@ -216,5 +222,27 @@ li.header-contato:hover {
 }
 
 .content-minhaFoto img:hover {
+  z-index: -10;
   transform: translateY(-8px);
+}
+
+#veja-projetos {
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.322);
+  margin: 25px auto;
+  width: 95%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  transition: 0.45s;
+}
+
+#veja-projetos a {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#veja-projetos:hover {
+  cursor: pointer;
 }
