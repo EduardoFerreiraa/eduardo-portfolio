@@ -15,9 +15,9 @@
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon" />
     <!-- React -->
     <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <!-- ReactDOM (conecta o React com a página HTML) -->
+    <!-- ReactDOM -->
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <!-- Babel (para escrever JSX / HTML dentro do JavaScript) -->
+    <!-- Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body>
@@ -38,7 +38,6 @@
             <nav id="header-nav">
               <ul id="header-list">
                 <li className="header-item">Início</li>
-                <li className="header-item">Sobre</li>
                 <li className="header-item">Habilidades</li>
                 <li className="header-item">Projetos</li>
                 <li className="header-item header-contato">Contato</li>
@@ -52,7 +51,7 @@
     function Main() {
       return (
         <div className="content-main">
-          <main className="main">
+          <main>
             <section id="content-inicio">
               <div className="inicio">
                 <p id="inicio-paragrafo">Olá!</p>
@@ -80,6 +79,38 @@
               </div>
               <div className="content-minhaFoto">
                 <img src="../image/minha-foto.png" alt="Minha foto" />
+              </div>
+            </section>
+
+            <section className="content-habilidades">
+              <h1>Habilidades</h1>
+              <div className="habilidades">
+                <div className="habilidades-card html">
+                  <p>HTML</p>
+                </div>
+                <div className="habilidades-card css">
+                  <p>CSS</p>
+                </div>
+                <div className="habilidades-card javascript">
+                  <p>JavaScript</p>
+                </div>
+                <div className="habilidades-card react">
+                  <p>React</p>
+                </div>
+              </div>
+              <div className="habilidades">
+                <div className="habilidades-card typescript">
+                  <p>TypeScript</p>
+                </div>
+                <div className="habilidades-card nodejs">
+                  <p>Node.Js</p>
+                </div>
+                <div className="habilidades-card mysql">
+                  <p>MySQL</p>
+                </div>
+                <div className="habilidades-card github-git">
+                  <p>GitHub e Git</p>
+                </div>
               </div>
             </section>
           </main>

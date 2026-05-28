@@ -101,10 +101,6 @@ li.header-contato:hover {
   height: 100vh;
 }
 
-.main {
-  margin-top: 120px;
-}
-
 #content-inicio {
   display: flex;
   align-items: end;
@@ -245,4 +241,126 @@ li.header-contato:hover {
 
 #veja-projetos:hover {
   cursor: pointer;
+}
+
+/* HABILIDADES */
+
+.content-habilidades {
+  background: linear-gradient(#0a0a0a, #0e0e0e, #111111, #161616, #1b1b1b);
+  height: 100vh;
+}
+
+.content-habilidades > h1 {
+  margin-left: 200px;
+  font-size: 3.8rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: white;
+}
+
+.habilidades {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.position-cards h2 {
+  font-size: 2.5rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.habilidades-card {
+  box-shadow: 1px 1px 15px rgba(148, 148, 148, 0.103);
+  background: transparent;
+  border: 1px solid rgb(73, 73, 73);
+  width: 350px;
+  height: 280px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.45s;
+  animation: cards-skill 2s ease-in-out infinite alternate;
+}
+
+.habilidades-card:hover {
+  border: 1px solid gray;
+  background: linear-gradient(rgb(255, 255, 255), rgb(214, 214, 214));
+  box-shadow: 1px 1px 15px rgba(24, 24, 24, 0.322);
+}
+
+.habilidades-card:hover p {
+  color: black;
+}
+
+.habilidades-card p {
+  font-size: 1.3rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+.html {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0s;
+}
+
+.css {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.1s;
+}
+
+.javascript {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.2s;
+}
+
+.react {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.3s;
+}
+
+.typescript {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.4s;
+}
+
+.nodejs {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.5s;
+}
+
+.mysql {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.6s;
+}
+
+.github-git {
+  animation: alternate-color 1.2s ease-in-out infinite alternate;
+  animation-delay: 0.7s;
+}
+
+@keyframes cards-skill {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(1.01);
+  }
+}
+
+@keyframes alternate-color {
+  to {
+    transform: translateX(0);
+  }
+
+  from {
+    transform: translateY(-15px);
+  }
 }
