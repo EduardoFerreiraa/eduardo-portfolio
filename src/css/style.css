@@ -487,10 +487,18 @@ li.header-contato:hover {
   color: rgb(255, 0, 255);
 }
 
+.ver-projeto:hover {
+  background-color: rgba(160, 0, 160, 0.205);
+}
+
+.ver-github:hover {
+  background-color: white;
+}
+
 .ver-github {
   width: 30%;
   margin: 15px;
-  background-color: white;
+  background-color: rgb(216, 216, 216);
   color: black;
 }
 
@@ -503,6 +511,12 @@ li.header-contato:hover {
   padding: 18px;
   border-radius: 10px;
   font-weight: 400;
+  transition: 0.5s;
+}
+
+.ver-projeto:hover,
+.ver-github:hover {
+  transform: scale(1.04);
 }
 
 p {
