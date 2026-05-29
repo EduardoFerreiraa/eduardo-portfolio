@@ -246,7 +246,7 @@ li.header-contato:hover {
 /* HABILIDADES */
 
 .content-habilidades {
-  background: linear-gradient(#0a0a0a, #0e0e0e, #111111, #161616, #1b1b1b);
+  background: linear-gradient(#0a0a0a, #0f0f0f, #000000);
   height: 100vh;
 }
 
@@ -275,9 +275,9 @@ li.header-contato:hover {
 }
 
 .habilidades-card {
-  box-shadow: 1px 1px 15px rgba(148, 148, 148, 0.103);
+  box-shadow: 1px 1px 15px rgba(82, 82, 82, 0.116);
   background: transparent;
-  border: 1px solid rgb(73, 73, 73);
+  border: 1px solid rgb(48, 48, 48);
   width: 350px;
   height: 280px;
   border-radius: 15px;
@@ -361,6 +361,39 @@ li.header-contato:hover {
   }
 
   from {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
   }
 }
+
+.content-projetos {
+  background: linear-gradient(#000000, #0f0f0f, #000000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-projetos h2 {
+  padding-top: 125px;
+  font-size: 3.8rem;
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.cards-projetos {
+  margin: 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid rgb(34, 34, 34);
+  border-radius: 15px;
+  background: linear-gradient(135deg, #0c0c0c, #131313);
+  height: 600px;
+  margin: 30px;
+}
+
+
