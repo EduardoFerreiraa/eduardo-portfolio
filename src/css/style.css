@@ -403,6 +403,13 @@ li.header-contato:hover {
   background: linear-gradient(135deg, #0c0c0c, #131313);
   height: 610px;
   margin: 25px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  background: linear-gradient(135deg, #1a1a1a, #1a1a1a);
 }
 
 .card-image {
