@@ -300,13 +300,60 @@
       );
     }
 
-    function Footer() {}
+    function Footer() {
+      return (
+        <div className="content-footer">
+          <footer className="footer">
+            <div className="content-pessoal">
+              <h3 id="footer-titulo">Eduardo Ferreira</h3>
+              <p id="paragrafo-desenvolvedor">Desenvolvedor Web</p>
+              <p id="footer-descricao">
+                Criando experiências digitais modernas, <br></br> funcionais e
+                pensadas para oferecer a <br></br> melhor experiência possível.
+              </p>
+            </div>
+            <div className="content-navegacao">
+              <div>
+                <h3 className="titulo-navegacao">Navegação</h3>
+                <div id="footer-actions">
+                  <a href="#">Início</a>
+                  <a href="#">Habilidades</a>
+                  <a href="#">Projetos</a>
+                  <a href="#">Contato</a>
+                </div>
+              </div>
+              <div>
+                <h3 className="titulo-navegacao">Serviços</h3>
+                <div id="footer-servicos">
+                  <p>Desenvolvimento Web</p>
+                  <p>Sites responsivos</p>
+                  <p>Landing Pages</p>
+                  <p>Interfaces modernas</p>
+                  <p>Otimização de sites</p>
+                </div>
+              </div>
+              <div>
+                <h3 className="titulo-navegacao">Contato</h3>
+                <div id="footer-contato">
+                  <p>eduardoferreiraalmeida10@gmail.com</p>
+                  <p>(34) 99999-9999</p>
+                  <p>Uberlândia - MG</p>
+                  <a href="#">Linkedin</a>
+                  <a href="#">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      );
+    }
 
     function App() {
       return (
         <div>
           <Header />
           <Main />
+          <Footer />
         </div>
       );
     }
