@@ -389,7 +389,7 @@ li.header-contato:hover {
 }
 
 .cards-projetos {
-  margin: 50px 50px;
+  margin: 50px 50px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   justify-content: center;
@@ -524,6 +524,88 @@ li.header-contato:hover {
 .ver-projeto:hover,
 .ver-github:hover {
   transform: scale(1.04);
+}
+
+.content-contato {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: black;
+  border: 1px solid rgb(0, 0, 0);
+  height: 100vh;
+}
+
+.contato {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin: 15rem auto;
+  padding: 25px;
+  gap: 75px;
+}
+
+#paragrafo-contato {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 0 0 25px 25px;
+}
+
+#paragrafo-colaboracoes {
+  margin: 60px 0 60px 0;
+  width: 40%;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#contato-titulo {
+  width: 50%;
+  font-size: 4.6rem;
+}
+
+#action-conversar {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 50px 0 0 40px;
+  transition: 0.45s;
+  animation: action-conversar 2s ease infinite alternate;
+}
+
+#action-conversar:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes action-conversar {
+  to {
+    transform: scale(1);
+  }
+
+  from {
+    transform: scale(1.05);
+  }
+}
+
+.redes-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.email-whatsapp {
+  display: flex;
+  gap: 50px;
+}
+
+.git-linkedin {
+  display: flex;
+  gap: 50px;
 }
 
 p {
