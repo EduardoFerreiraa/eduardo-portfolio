@@ -550,7 +550,7 @@ li.header-contato:hover {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.45s;
+  transition: 0.3s;
   animation: action-conversar 1.8s ease infinite alternate;
 }
 
@@ -561,7 +561,7 @@ li.header-contato:hover {
 
 @keyframes action-conversar {
   from {
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 
   to {
