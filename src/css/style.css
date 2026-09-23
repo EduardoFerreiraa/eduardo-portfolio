@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-boxd;
+  /* box-sizing: border-box; */
 }
 
 body {
@@ -98,7 +98,6 @@ li.header-contato:hover {
 
 .content-main {
   background: linear-gradient(rgb(8, 8, 8), rgb(10, 10, 10));
-  height: 100vh;
 }
 
 #content-inicio {
@@ -647,6 +646,83 @@ li.header-contato:hover {
 .paragrafo-redesocial {
   color: rgb(204, 204, 204);
   margin: 5px 0 0 35px;
+}
+
+/* FOOTER */
+
+.content-footer {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: #060606;
+  border-top: 1px solid #222222;
+  color: white;
+  padding: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#footer-titulo {
+  font-size: 2.5rem;
+}
+
+#paragrafo-desenvolvedor {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin: 10px 0 35px 0;
+  text-transform: uppercase;
+}
+
+#footer-descricao {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.content-navegacao {
+  display: flex;
+  gap: 100px;
+}
+
+.titulo-navegacao {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+#footer-actions,
+#footer-servicos,
+#footer-contato {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer-actions a,
+#footer-contato a,
+#footer-servicos p,
+#footer-contato p {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+#footer-actions a:hover,
+#footer-contato a:hover {
+  border: 1px solid white;
+}
+
+#footer-servicos {
+  gap: 15px;
+}
+
+#footer-contato {
+  gap: 12px;
 }
 
 p {
