@@ -20,7 +20,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: #0a0a0a;
+  border: 1px solid #242424;
   border-radius: 18px;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.192);
   animation: entrada 0.8s ease;
@@ -57,6 +58,7 @@ body {
 }
 
 #header-titulo {
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 100;
@@ -70,29 +72,31 @@ body {
 }
 
 .header-item {
+  cursor: pointer;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   list-style: none;
   transition: 0.25s;
-  padding: 15px 25px;
+  padding: 10px 25px;
   border-radius: 15px;
+  border: 1px solid transparent;
 }
 
 .header-item:hover {
-  cursor: pointer;
-  background-color: black;
-  color: white;
+  border: 1px solid #353535;
 }
 
 li.header-contato {
-  padding: 15px 25px;
   border-radius: 15px;
-  background: #000;
-  color: #fff;
+  background: white;
+  color: black;
 }
 
 li.header-contato:hover {
-  background: #272727;
-  box-shadow: 1px 1px 15px #272727a4;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.24);
+  background-color: white;
+  color: black;
+  border: 1px solid transparent;
 }
 
 #content-inicio {
