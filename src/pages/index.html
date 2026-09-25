@@ -4,313 +4,376 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio</title>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/media.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon" />
-    <!-- React -->
-    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
-    <!-- ReactDOM -->
-    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-    <!-- Babel -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
+
   <body>
-    <div id="root"></div>
-  </body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html">
+          <img id="logo" src="../image/logo.png" alt="Logo" />
+        </a>
 
-  <script type="text/babel">
-    function Header() {
-      return (
-        <div>
-          <header className="header">
-            <div className="header-logo">
-              <a href="index.html">
-                <img id="logo" src="../image/logo.png" alt="Logo" />
-              </a>
-              <h1 id="header-titulo">Criado por Eduardo</h1>
+        <h1 id="header-titulo">Criado por Eduardo</h1>
+      </div>
+
+      <nav id="header-nav">
+        <ul id="header-list">
+          <li class="header-item">Início</li>
+          <li class="header-item">Habilidades</li>
+          <li class="header-item">Projetos</li>
+          <li class="header-item header-contato">Contato</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-main">
+      <main>
+        <section id="content-inicio">
+          <div class="inicio">
+            <p id="inicio-paragrafo">Olá!</p>
+
+            <h1 id="inicio-titulo">Eu sou Desenvolvedor Web</h1>
+
+            <p id="frase-curta">
+              Criando interfaces modernas, responsivas e funcionais.
+            </p>
+
+            <div class="content-count">
+              <div class="count">
+                <p class="quantidade"><span class="span-projeto">+</span>10</p>
+
+                <p class="projetos-completos">Projetos completos</p>
+              </div>
+
+              <div class="count">
+                <p class="quantidade"><span class="span-projeto">+</span>6</p>
+
+                <p class="projetos-completos">Tecnologias aprendidas</p>
+              </div>
             </div>
-            <nav id="header-nav">
-              <ul id="header-list">
-                <li className="header-item">Início</li>
-                <li className="header-item">Habilidades</li>
-                <li className="header-item">Projetos</li>
-                <li className="header-item header-contato">Contato</li>
-              </ul>
-            </nav>
-          </header>
-        </div>
-      );
-    }
 
-    function Main() {
-      return (
-        <div className="content-main">
-          <main>
-            <section id="content-inicio">
-              <div className="inicio">
-                <p id="inicio-paragrafo">Olá!</p>
-                <h1 id="inicio-titulo">Eu sou Desenvolvedor Web</h1>
-                <p id="frase-curta">
-                  Criando interfaces modernas, responsivas e funcionais.
-                </p>
-                <div className="content-count">
-                  <div className="count">
-                    <p className="quantidade">
-                      <span className="span-projeto">+</span>10
+            <div id="veja-projetos">
+              <a href="#">Veja meus projetos</a>
+            </div>
+          </div>
+
+          <div class="content-minhaFoto">
+            <img src="../image/minha-foto.png" alt="Minha foto" />
+          </div>
+        </section>
+
+        <section class="content-habilidades">
+          <h1>Habilidades</h1>
+
+          <div class="habilidades">
+            <div class="habilidades-card html">
+              <p>HTML</p>
+            </div>
+
+            <div class="habilidades-card css">
+              <p>CSS</p>
+            </div>
+
+            <div class="habilidades-card javascript">
+              <p>JavaScript</p>
+            </div>
+
+            <div class="habilidades-card react">
+              <p>React</p>
+            </div>
+          </div>
+
+          <div class="habilidades">
+            <div class="habilidades-card typescript">
+              <p>TypeScript</p>
+            </div>
+
+            <div class="habilidades-card nodejs">
+              <p>Node.Js</p>
+            </div>
+
+            <div class="habilidades-card mysql">
+              <p>MySQL</p>
+            </div>
+
+            <div class="habilidades-card github-git">
+              <p>GitHub e Git</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-projetos">
+          <h2>Projetos</h2>
+
+          <p id="p-projetos">Aqui estão alguns projetos que desenvolvi.</p>
+
+          <div class="cards-projetos">
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-react">React</p>
+                <p class="card-javascript">JavaScript</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-javascript">JavaScript</p>
+                <p class="card-api">API</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-javascript">JavaScript</p>
+                <p class="card-react">React</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-javascript">JavaScript</p>
+                <p class="card-api">API</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-javascript">JavaScript</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image"></div>
+
+              <h3 class="card-titulo">Nome do projeto</h3>
+
+              <p class="card-descricao">Descrição do projeto...</p>
+
+              <div class="card-liguagens">
+                <p class="card-html">HTML</p>
+                <p class="card-css">CSS</p>
+                <p class="card-javascript">JavaScript</p>
+                <p class="card-react">React</p>
+              </div>
+
+              <div class="action-project">
+                <a class="ver-projeto" href="#">Ver projeto</a>
+                <a class="ver-github" href="#">Git Hub</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-contato">
+          <div class="contato">
+            <div class="vamos-conversar">
+              <p id="paragrafo-contato">Contato</p>
+
+              <h3 id="contato-titulo">Vamos trabalhar juntos?</h3>
+
+              <p id="paragrafo-colaboracoes">
+                Tem uma ideia, projeto ou oportunidade? <br />
+                Estou sempre aberto a novos desafios e <br />
+                colaborações. Vamos conversar!
+              </p>
+
+              <a id="action-conversar" href="#">Vamos conversar</a>
+            </div>
+
+            <div class="redes-sociais">
+              <div class="email-whatsapp">
+                <div class="card-redesocial">
+                  <div>
+                    <h3 class="titulo-redesocial">Email</h3>
+
+                    <p class="paragrafo-redesocial">
+                      eduardoferreiraalmeida10@gmail.com
                     </p>
-                    <p className="projetos-completos">Projetos completos</p>
-                  </div>
-                  <div className="count">
-                    <p className="quantidade">
-                      <span className="span-projeto">+</span>6
+
+                    <p class="paragrafo-redesocial">
+                      Envie um e-mail e <br />
+                      retornarei em breve!
                     </p>
-                    <p className="projetos-completos">Tecnologias aprendidas</p>
                   </div>
                 </div>
-                <div id="veja-projetos">
-                  <a href="#">Veja meus projetos</a>
-                </div>
-              </div>
-              <div className="content-minhaFoto">
-                <img src="../image/minha-foto.png" alt="Minha foto" />
-              </div>
-            </section>
 
-            <section className="content-habilidades">
-              <h1>Habilidades</h1>
-              <div className="habilidades">
-                <div className="habilidades-card html">
-                  <p>HTML</p>
-                </div>
-                <div className="habilidades-card css">
-                  <p>CSS</p>
-                </div>
-                <div className="habilidades-card javascript">
-                  <p>JavaScript</p>
-                </div>
-                <div className="habilidades-card react">
-                  <p>React</p>
-                </div>
-              </div>
-              <div className="habilidades">
-                <div className="habilidades-card typescript">
-                  <p>TypeScript</p>
-                </div>
-                <div className="habilidades-card nodejs">
-                  <p>Node.Js</p>
-                </div>
-                <div className="habilidades-card mysql">
-                  <p>MySQL</p>
-                </div>
-                <div className="habilidades-card github-git">
-                  <p>GitHub e Git</p>
-                </div>
-              </div>
-            </section>
+                <div class="card-redesocial">
+                  <div>
+                    <h3 class="titulo-redesocial">WhatsApp</h3>
 
-            <section className="content-projetos">
-              <h2>Projetos</h2>
-              <p id="p-projetos">Aqui estão alguns projetos que desenvolvi.</p>
-              <div className="cards-projetos">
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-react">React</p>
-                    <p className="card-javascript">JavaScript</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-javascript">JavaScript</p>
-                    <p className="card-api">API</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-javascript">JavaScript</p>
-                    <p className="card-react">React</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-javascript">JavaScript</p>
-                    <p className="card-api">API</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-javascript">JavaScript</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-image"></div>
-                  <h3 className="card-titulo">Nome do projeto</h3>
-                  <p className="card-descricao">Descrição do projeto...</p>
-                  <div className="card-liguagens">
-                    <p className="card-html">HTML</p>
-                    <p className="card-css">CSS</p>
-                    <p className="card-javascript">JavaScript</p>
-                    <p className="card-react">React</p>
-                  </div>
-                  <div className="action-project">
-                    <a className="ver-projeto" href="#">
-                      Ver projeto
-                    </a>
-                    <a className="ver-github" href="#">
-                      Git Hub
-                    </a>
+                    <p class="paragrafo-redesocial">(34) 99999-9999</p>
+
+                    <p class="paragrafo-redesocial">
+                      Resposta rápida e <br />
+                      atendimento direto!
+                    </p>
                   </div>
                 </div>
               </div>
-            </section>
 
-            <section className="content-contato">
-              <div className="contato">
-                <div className="vamos-conversar">
-                  <p id="paragrafo-contato">Contato</p>
-                  <h3 id="contato-titulo">Vamos trabalhar juntos?</h3>
-                  <p id="paragrafo-colaboracoes">
-                    Tem uma ideia, projeto ou oportunidade? <br></br> Estou
-                    sempre aberto a novos desafios e <br></br> colaborações.
-                    Vamos conversar!
-                  </p>
-                  <a id="action-conversar" href="#">
-                    Vamos conversar
+              <div class="git-linkedin">
+                <div class="card-redesocial">
+                  <a href="#">
+                    <h3 class="titulo-redesocial">GitHub</h3>
+
+                    <p class="paragrafo-redesocial">
+                      Confira meus projetos e <br />
+                      códigos.
+                    </p>
                   </a>
                 </div>
-                <div className="redes-sociais">
-                  <div className="email-whatsapp">
-                    <div className="card-redesocial">
-                      <div>
-                        <h3 className="titulo-redesocial">Email</h3>
-                        <p className="paragrafo-redesocial">
-                          eduardoferreiraalmeida10@gmail.com
-                        </p>
-                        <p className="paragrafo-redesocial">
-                          Envie um e-mail e <br></br> retornarei em breve!
-                        </p>
-                      </div>
-                    </div>
-                    <div className="card-redesocial">
-                      <div>
-                        <h3 className="titulo-redesocial">WhatsApp</h3>
-                        <p className="paragrafo-redesocial">(34) 99999-9999</p>
-                        <p className="paragrafo-redesocial">
-                          Resposta rápida e <br></br> atendimento direto!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="git-linkedin">
-                    <div className="card-redesocial">
-                      <a href="#">
-                        <h3 className="titulo-redesocial">GitHub</h3>
-                        <p className="paragrafo-redesocial">
-                          Confira meus projetos e <br></br> códigos.
-                        </p>
-                      </a>
-                    </div>
-                    <div className="card-redesocial">
-                      <a href="#">
-                        <h3 className="titulo-redesocial">Linkedin</h3>
-                        <p className="paragrafo-redesocial">
-                          linkedin.com/in/eduardo...
-                        </p>
-                        <p className="paragrafo-redesocial">
-                          Vamos nos conectar e <br></br> trocar ideias!
-                        </p>
-                      </a>
-                    </div>
-                  </div>
+
+                <div class="card-redesocial">
+                  <a href="#">
+                    <h3 class="titulo-redesocial">Linkedin</h3>
+
+                    <p class="paragrafo-redesocial">
+                      linkedin.com/in/eduardo...
+                    </p>
+
+                    <p class="paragrafo-redesocial">
+                      Vamos nos conectar e <br />
+                      trocar ideias!
+                    </p>
+                  </a>
                 </div>
               </div>
-            </section>
-          </main>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="content-footer">
+      <footer class="footer">
+        <div class="content-pessoal">
+          <h3 id="footer-titulo">Eduardo Ferreira</h3>
+
+          <p id="paragrafo-desenvolvedor">Desenvolvedor Web</p>
+
+          <p id="footer-descricao">
+            Criando experiências digitais modernas,
+            <br />
+            funcionais e pensadas para oferecer a
+            <br />
+            melhor experiência possível.
+          </p>
         </div>
-      );
-    }
 
-    function Footer() {}
+        <div class="content-navegacao">
+          <div>
+            <h3 class="titulo-navegacao">Navegação</h3>
 
-    function App() {
-      return (
-        <div>
-          <Header />
-          <Main />
+            <div id="footer-actions">
+              <a href="#">Início</a>
+              <a href="#">Habilidades</a>
+              <a href="#">Projetos</a>
+              <a href="#">Contato</a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="titulo-navegacao">Serviços</h3>
+
+            <div id="footer-servicos">
+              <p>Desenvolvimento Web</p>
+              <p>Sites responsivos</p>
+              <p>Landing Pages</p>
+              <p>Interfaces modernas</p>
+              <p>Otimização de sites</p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="titulo-navegacao">Contato</h3>
+
+            <div id="footer-contato">
+              <p>eduardoferreiraalmeida10@gmail.com</p>
+              <p>(34) 99999-9999</p>
+              <p>Uberlândia - MG</p>
+
+              <a href="#">Linkedin</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
         </div>
-      );
-    }
-
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-  </script>
+      </footer>
+    </div>
+  </body>
 </html>
