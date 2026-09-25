@@ -6,6 +6,7 @@
 
 body {
   background: #000000;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -252,7 +253,7 @@ li.header-contato:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 35px;
 }
 
 .position-cards h2 {
@@ -263,22 +264,18 @@ li.header-contato:hover {
 }
 
 .habilidades-card {
-  width: 350px;
+  width: 270px;
   height: 280px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #050505;
   border: 1px solid #222;
   border-radius: 15px;
   box-shadow: 1px 1px 15px rgba(82, 82, 82, 0.116);
-  transition: 0.45s;
+  transition: 0.2s;
   animation: cards-skill 2s ease-in-out infinite alternate;
-}
-
-.habilidades-card:hover {
-  background: #111;
-  box-shadow: 1px 1px 15px rgba(24, 24, 24, 0.322);
 }
 
 .habilidades-card p {
@@ -288,20 +285,70 @@ li.header-contato:hover {
   font-weight: 300;
 }
 
+.habilidades-card > h2 {
+  margin-top: 15px;
+}
+
+.icons {
+  width: 100px;
+}
+
 .html {
+  border: 1px solid orangered;
+  background-color: #ff44000e;
   animation-delay: 0s;
 }
 
+.html:hover {
+  box-shadow: 1px 1px 35px rgba(255, 68, 0, 0.425);
+}
+
+.html > h2 {
+  margin-top: 15px;
+  color: #ff5e00;
+}
+
 .css {
+  background-color: #006eff18;
+  border: 1px solid #006eff;
   animation-delay: 0.1s;
 }
 
+.css:hover {
+  box-shadow: 1px 1px 35px #006eff6e;
+}
+
+.css > h2 {
+  color: #006eff;
+}
+
 .javascript {
+  background-color: rgba(255, 255, 0, 0.048);
+  border: 1px solid yellow;
   animation-delay: 0.2s;
 }
 
+.javascript:hover {
+  box-shadow: 1px 1px 35px rgba(255, 255, 0, 0.356);
+}
+
+.javascript > h2 {
+  margin-top: 20px;
+  color: yellow;
+}
+
 .react {
+  background-color: #00d9ff0e;
+  border: 1px solid #00d9ff;
   animation-delay: 0.3s;
+}
+
+.react:hover {
+  box-shadow: 1px 1px 35px #00d9ff6b;
+}
+
+.react > h2 {
+  color: #00d9ff;
 }
 
 .typescript {
@@ -317,7 +364,17 @@ li.header-contato:hover {
 }
 
 .github-git {
+  background-color: #ff51000e;
+  border: 1px solid #ff5100;
   animation-delay: 0.7s;
+}
+
+.github-git:hover {
+  box-shadow: 1px 1px 35px #ff510077;
+}
+
+.github-git {
+  color: #ff5100;
 }
 
 .html,
