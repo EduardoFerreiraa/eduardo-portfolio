@@ -89,15 +89,12 @@ body {
 
 li.header-contato {
   border-radius: 15px;
-  background: white;
-  color: black;
+  border: 1px solid #353535;
 }
 
 li.header-contato:hover {
-  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.24);
-  background-color: white;
-  color: black;
-  border: 1px solid transparent;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.151);
+  color: white;
 }
 
 #content-inicio {
