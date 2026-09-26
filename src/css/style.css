@@ -43,7 +43,7 @@ body {
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 30px;
 }
 
 .header-logo a {
@@ -68,7 +68,7 @@ body {
 #header-list {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
   margin-right: 25px;
 }
 
