@@ -127,8 +127,8 @@ li.header-contato:hover {
 }
 
 #disponivel-projetos {
-  background: #0f1e14; 
-  border: 1px solid #1f3a26; 
+  background: #0f1e14;
+  border: 1px solid #1f3a26;
   color: #5fd88a;
   border-radius: 50px;
   padding: 8px;
@@ -309,7 +309,7 @@ li.header-contato:hover {
   margin-left: 200px;
   color: #fff;
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   text-align: left;
 }
 
@@ -538,167 +538,91 @@ p.nivel {
 }
 
 .content-projetos {
-  margin-top: 150px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.content-projetos h2 {
-  padding-top: 125px;
-  color: #fff;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 3.8rem;
-  text-align: center;
-}
-
-#p-projetos {
-  margin-top: 10px;
-  color: #fff;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 1.3rem;
-  font-weight: 200;
-  text-align: center;
-}
-
-.cards-projetos {
-  margin: 50px 50px 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  align-items: center;
+  width: 72%;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  align-items: start;
+  padding: 10px;
 }
 
-.card {
-  height: 610px;
-  margin: 25px;
-  background: #050505;
-  border: 1px solid #222;
-  border-radius: 15px;
-  transition: 0.4s;
+#title-projetos {
+  color: white;
+  font-size: 3.5rem;
 }
 
-.card:hover {
-  cursor: pointer;
-  background: #111;
-  transform: translateY(-10px);
+#descricao-projetos {
+  margin-top: 10px;
+  color: gray;
+  font-size: 17px;
 }
 
-.card-image {
-  width: 90%;
-  height: 320px;
-  margin: 25px auto;
-  border: 1px solid #3f3f3f;
-  border-radius: 15px;
+.cards-project {
+  font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 10px;
+  color: white;
+  margin-top: 60px;
 }
 
-.card-image > img {
-  border-radius: 15px;
+.id-project {
+  color: gray;
+  font-size: 18px;
+}
+
+.image-project {
+  width: 650px;
+  height: 350px;
+}
+
+.image-project > img {
+  border-radius: 25px;
   width: 100%;
   height: 100%;
 }
 
-.card-titulo {
-  margin-left: 40px;
-  color: #c7c7c7;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
+.informacoes-project {
+  margin-bottom: 100px;
 }
 
-.card-descricao {
-  margin: 10px 25px 25px 50px;
-  color: #c7c7c7;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+.informacoes-project h3 {
+  font-size: 2rem;
 }
 
-.card-liguagens {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
+.descricao-project {
+  color: #a5a5a5;
+  font-size: 17px;
+  margin-top: 20px;
 }
 
-.card-html,
-.card-css,
-.card-javascript,
-.card-api,
-.card-react {
-  padding: 10px;
-  border-radius: 10px;
+.linguagens-project {
+  color: #a5a5a5;
+  font-size: 15px;
+  margin-top: 25px;
 }
 
-.card-html {
-  margin-left: 45px;
-  background: rgba(255, 166, 0, 0.116);
-  border: 1px solid orange;
-  color: orange;
-}
-
-.card-css {
-  background: rgba(0, 110, 255, 0.116);
-  border: 1px solid #00a2ff;
-  color: #0099ff;
-}
-
-.card-javascript {
-  background: rgba(238, 255, 0, 0.068);
-  border: 1px solid #ffee00;
-  color: #ffee00;
-}
-
-.card-api {
-  background: rgba(172, 255, 47, 0.089);
-  border: 1px solid greenyellow;
-  color: greenyellow;
-}
-
-.card-react {
-  background: rgba(0, 238, 255, 0.089);
-  border: 1px solid #00ffd5;
-  color: #00ffea;
+.linguagens-project .sep {
+  margin: 5px;
 }
 
 .action-project {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 20px;
 }
 
-.ver-projeto,
-.ver-github {
-  width: 60%;
-  margin: 25px 8px;
-  padding: 18px;
-  border-radius: 10px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  text-align: center;
+.action-project a {
   text-decoration: none;
-  transition: 0.5s;
+  color: white;
 }
 
-.ver-projeto {
-  background: rgba(92, 0, 92, 0.205);
-  border: 1px solid #6b0079;
-  color: #ff00ff;
-}
-
-.ver-projeto:hover {
-  background: rgba(160, 0, 160, 0.205);
-}
-
-.ver-github {
-  background: #d8d8d8;
-  color: #000;
-}
-
-.ver-github:hover {
-  background: #fff;
-}
-
-.ver-projeto:hover,
-.ver-github:hover {
-  transform: scale(1.02);
+.ver-project,
+.github-project {
+  border-bottom: 1px solid white;
+  padding: 2px 12px 0px 2px;
+  margin-right: 15px;
 }
 
 .content-contato {
