@@ -111,16 +111,19 @@ li.header-contato:hover {
 #inicio-paragrafo,
 #inicio-titulo,
 #frase-curta {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   animation: entradaInicio 0.8s ease;
 }
 
 #inicio-paragrafo {
-  font-size: 2rem;
+  color: rgb(165, 165, 165);
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
 #inicio-titulo {
+  font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
+
   font-size: 4.5rem;
   font-weight: 700;
 }
@@ -131,7 +134,12 @@ li.header-contato:hover {
 }
 
 #inicio-paragrafo {
+  font-family: "Space Grotesk", "Inter", Arial, Helvetica, sans-serif;
   animation-duration: 0.6s;
+}
+
+#inicio-titulo span {
+  color: #5B8CFF;
 }
 
 #inicio-titulo {
@@ -139,6 +147,10 @@ li.header-contato:hover {
 }
 
 #frase-curta {
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(160, 160, 160);
+  width: 600px;
   animation-duration: 0.75s;
 }
 
@@ -217,18 +229,14 @@ li.header-contato:hover {
 }
 
 #veja-projetos {
+  display: flex;
+  gap: 25px;
   width: 100%;
   margin: 25px auto;
   padding: 20px;
-  background: #050505;
-  border: 1px solid #222;
   border-radius: 15px;
   text-align: center;
   transition: 0.45s;
-}
-
-#veja-projetos:hover {
-  cursor: pointer;
 }
 
 #veja-projetos a {
