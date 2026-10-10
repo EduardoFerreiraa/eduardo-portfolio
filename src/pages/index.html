@@ -40,7 +40,12 @@
           <li class="header-item">Habilidades</li>
           <li class="header-item">Projetos</li>
           <li class="header-item">Contato</li>
-          <li class="header-item header-contato"><img src="../image/github_logo_icon_248225.png" alt="GitHub">GitHub</li>
+          <li class="header-item header-contato">
+            <img
+              src="../image/github_logo_icon_248225.png"
+              alt="GitHub"
+            />GitHub
+          </li>
         </ul>
       </nav>
     </header>
@@ -55,9 +60,9 @@
             <h1 id="inicio-titulo">Desenvolvedor <span>Front-end</span></h1>
 
             <p id="frase-curta">
-              Transformo ideias em interfaces rápidas, responsivas e bem
-              pensadas. Trabalho principalmente com React e JavaScript, com
-              atenção especial a detalhes de UI e experiência do usuário.
+              Desenvolvo interfaces com React e JavaScript, sempre buscando unir
+              um bom visual, responsividade e uma experiência simples para quem
+              usa.
             </p>
 
             <div class="content-count">
@@ -78,7 +83,6 @@
                   src="../image/github_logo_icon_248225.png"
                   alt="Icon GitHub"
                 />
-
                 <p class="projetos-completos github-text">GitHub</p>
               </div>
             </div>
@@ -91,6 +95,15 @@
 
           <div class="content-minhaFoto">
             <img src="../image/minha-foto.png" alt="Minha foto" />
+            <div class="disponivel">
+              <div id="disponivel-back">
+                <div id="disponivel-children"></div>
+              </div>
+              <div id="disponivel-content">
+                <p>Disponível</p>
+                <p id="resposta">Resposta em 24h</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -174,31 +187,33 @@
         </section>
 
         <section class="content-projetos">
-          <div>
-            <h2 id="title-projetos">Projetos</h2>
-            <p id="descricao-projetos">
-              Uma seleção do que venho construindo - do front ao back.
-            </p>
-          </div>
-
-          <div class="cards-project">
-            <p class="id-project">01</p>
-            <div class="image-project">
-              <img src="../image/taskManager.png" alt="Task Manager" />
+          <div class="position-projetos">
+            <div>
+              <h2 id="title-projetos">Projetos</h2>
+              <p id="descricao-projetos">
+                Uma seleção do que venho construindo - do front ao back.
+              </p>
             </div>
-            <div class="informacoes-project">
-              <h3>Task Manager</h3>
-              <p class="descricao-project">
-                Aplicativo de criação e organização de tarefas, com painel
-                simples e responsivo para o dia a dia.
-              </p>
-              <p class="linguagens-project">
-                <span>HTML</span><span class="sep">·</span><span>CSS</span
-                ><span class="sep">·</span><span>JavaScript</span>
-              </p>
-              <div class="action-project">
-                <a href="#" class="ver-project">Ver projeto</a>
-                <a href="#" class="github-project">GitHub</a>
+
+            <div class="cards-project">
+              <p class="id-project">01</p>
+              <div class="image-project">
+                <img src="../image/taskManager.png" alt="Task Manager" />
+              </div>
+              <div class="informacoes-project">
+                <h3>Task Manager</h3>
+                <p class="descricao-project">
+                  Aplicativo de criação e organização de tarefas, com painel
+                  simples e responsivo para o dia a dia.
+                </p>
+                <p class="linguagens-project">
+                  <span>HTML</span><span class="sep">·</span><span>CSS</span
+                  ><span class="sep">·</span><span>JavaScript</span>
+                </p>
+                <div class="action-project">
+                  <a href="#" class="ver-project">Ver projeto</a>
+                  <a href="#" class="github-project">GitHub</a>
+                </div>
               </div>
             </div>
           </div>
@@ -307,10 +322,10 @@
             <h3 class="titulo-navegacao">Navegação</h3>
 
             <div id="footer-actions">
-              <a href="#">Início</a>
-              <a href="#">Habilidades</a>
-              <a href="#">Projetos</a>
-              <a href="#">Contato</a>
+              <a href="#inicio">Início</a>
+              <a href="#habilidades">Habilidades</a>
+              <a href="#projetos">Projetos</a>
+              <a href="#contato">Contato</a>
             </div>
           </div>
 

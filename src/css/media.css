@@ -1,0 +1,344 @@
+/* Celulares: estilo padrão */
+.container {
+  width: 100%;
+}
+
+/* Celulares grandes */
+@media (min-width: 360px) {
+  * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 15px 5px;
+  }
+
+  #header-titulo {
+    font-size: 12px;
+  }
+
+  #logo {
+    width: 45px;
+  }
+
+  .header-item {
+    display: none;
+    padding: 5px 8px;
+  }
+
+  /* MAIN */
+
+  #content-inicio {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inicio-paragrafo {
+    font-size: 0.9rem;
+  }
+
+  #disponivel-projetos {
+    font-size: 12px;
+    padding: 8px;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  #inicio-titulo {
+    margin-top: 15px;
+    font-size: 1.6rem;
+  }
+
+  #frase-curta {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .count {
+    width: 100%;
+  }
+
+  .span-projeto {
+    bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  .quantidade {
+    font-size: 2.1rem;
+  }
+
+  .projetos-completos {
+    width: 100%;
+    margin-left: 5px;
+    font-size: 10px;
+  }
+
+  .github-action {
+    display: none;
+  }
+
+  #veja-projetos {
+    gap: 15px;
+    width: 100%;
+  }
+
+  #veja-projetos a {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .content-minhaFoto {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+  }
+
+  .content-minhaFoto img {
+    width: 425px;
+  }
+
+  .disponivel {
+    width: 260px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+  }
+
+  #disponivel-content {
+    width: 80%;
+  }
+
+  #disponivel-content > p {
+    font-size: 13p;
+  }
+
+  #disponivel-back {
+    width: 25px;
+    height: 25px;
+  }
+
+  #disponivel-children {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* SECTION HABILIDADES */
+
+  .content-habilidades {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+  }
+
+  .content-habilidades > h1 {
+    margin-left: 30px;
+    font-size: 1.6rem;
+  }
+
+  .habilidades {
+    margin: 15px;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-cards h2 {
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+
+  .habilidades-card {
+    width: 100%;
+    height: 170px;
+    padding: 25px;
+  }
+
+  .habilidades-card > h2 {
+    font-size: 18px;
+  }
+
+  .habilidades-card p {
+    font-size: 0.8rem;
+  }
+
+  .icons {
+    width: 45px;
+  }
+
+  .glow {
+    width: 115px;
+    height: 100px;
+  }
+
+  .card-tambem {
+    width: fit-content;
+    margin: 25px auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card-item {
+    width: 100%;
+    padding: 8px 20px;
+  }
+
+  .card-item > p {
+    font-size: 15px;
+  }
+
+  .card-item > img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  /* SECTION PROJETOS */
+
+  .content-projetos {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #title-projetos {
+    font-size: 1.6rem;
+  }
+
+  #descricao-projetos {
+    font-size: 15px;
+  }
+
+  .cards-project {
+    border: 1px solid #222;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  .id-project {
+    margin-top: 25px;
+    color: gray;
+    font-size: 20px;
+  }
+
+  .image-project {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-project > img {
+    border-radius: 10px;
+  }
+
+  .informacoes-project {
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+
+  .content-contato {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .contato {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #paragrafo-contato {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  #contato-titulo {
+    width: 50%;
+    font-size: 3rem;
+    margin-top: 15px;
+  }
+
+  #paragrafo-colaboracoes {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #action-conversar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    font-size: 14px;
+  }
+
+  .redes-sociais {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .email-whatsapp,
+  .git-linkedin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card-redesocial {
+    background-color: #010101;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .titulo-redesocial {
+    font-size: 1.2rem;
+    margin-left: 20px;
+  }
+
+  .paragrafo-redesocial {
+    width: 100%;
+    font-size: 14px;
+    margin: 2px;
+    padding-left: 15px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .header-item {
+    display: block;
+  }
+
+  #content-inicio {
+    display: flex;
+    flex-direction: row;
+  }
+}
