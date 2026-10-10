@@ -255,6 +255,77 @@
     padding: 10px;
     margin-bottom: 25px;
   }
+
+  .content-contato {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .contato {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #paragrafo-contato {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  #contato-titulo {
+    width: 50%;
+    font-size: 3rem;
+    margin-top: 15px;
+  }
+
+  #paragrafo-colaboracoes {
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #action-conversar {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    color: black;
+    background-color: white;
+  }
+
+  .redes-sociais {
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+    gap: 0;
+  }
+
+  .email-whatsapp,
+  .git-linkedin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card-redesocial {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .titulo-redesocial {
+    font-size: 1.2rem;
+  }
+
+  .paragrafo-redesocial {
+    width: 100%;
+    font-size: 14px;
+    margin: 2px;
+    padding-left: 15px;
+  }
 }
 
 /* Tablets */
