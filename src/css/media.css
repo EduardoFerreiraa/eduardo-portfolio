@@ -1,0 +1,114 @@
+/* Celulares: estilo padrão */
+.container {
+  width: 100%;
+}
+
+/* Celulares grandes */
+@media (min-width: 420px) {
+  * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .header {
+    padding: 15px 5px;
+  }
+
+  #header-titulo {
+    font-size: 13px;
+  }
+
+  #logo {
+    width: 45px;
+  }
+
+  .header-item {
+    display: none;
+    padding: 8px 20px;
+  }
+
+  /* MAIN */
+
+  #content-inicio {
+    width: 100%;
+    max-width: 100%;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #inicio-paragrafo {
+    font-size: 0.9rem;
+  }
+
+  #disponivel-projetos {
+    font-size: 0.9rem;
+    padding: 8px;
+    width: 235px;
+    margin-bottom: 30px;
+  }
+
+  #inicio-titulo {
+    font-size: 2rem;
+  }
+
+  .count {
+    width: 100%;
+  }
+
+  .count > img {
+    width: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .span-projeto {
+    position: relative;
+    bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .quantidade {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  .projetos-completos {
+    width: 100%;
+    margin-left: 5px;
+    font-size: 0.8rem;
+  }
+
+  .github-text {
+    font-weight: 100;
+    margin-left: 25px;
+  }
+
+  #veja-projetos {
+    gap: 10px;
+    width: 100%;
+  }
+
+  #veja-projetos a {
+    margin-top: 10px;
+    padding: 15px 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .header-item {
+    display: block;
+  }
+
+  #content-inicio {
+    display: flex;
+    flex-direction: row;
+  }
+}
