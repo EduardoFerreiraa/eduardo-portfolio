@@ -703,12 +703,14 @@
   /* SECTION HABILIDADES */
   .content-habilidades > h1 {
     margin-left: 30px;
+    text-align: center;
     font-size: 2.7rem;
   }
 
   .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
   }
 
   .habilidades-card > h2 {
@@ -752,15 +754,19 @@
   }
 
   #title-projetos {
+    text-align: center;
     font-size: 2.7rem;
   }
 
   #descricao-projetos {
     font-size: 18px;
+    text-align: center;
   }
 
   .cards-project {
     padding: 15px;
+    margin-left: 40px;
+    margin-right: 40px
   }
 
   .id-project {
