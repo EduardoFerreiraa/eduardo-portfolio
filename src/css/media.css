@@ -32,7 +32,6 @@
   }
 
   /* MAIN */
-
   #content-inicio {
     width: 100%;
     max-width: 100%;
@@ -585,12 +584,121 @@
 
 /* Tablets */
 @media (min-width: 768px) {
+  /* HEADER */
+  #header-titulo {
+    font-size: 14px;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  .header-item {
+    display: none;
+    padding: 8px;
+  }
+
   .header-item {
     display: block;
   }
 
+  /* MAIN */
   #content-inicio {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 50px;
   }
+
+  #inicio-paragrafo {
+    font-size: 1.4rem;
+  }
+
+  #disponivel-projetos {
+    font-size: 13px;
+    width: 220px;
+  }
+
+  #inicio-titulo {
+    font-size: 3rem;
+  }
+
+  #frase-curta {
+    font-size: 16px;
+  }
+
+  .span-projeto {
+    font-size: 1.6rem;
+  }
+
+  .content-count {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+
+  .quantidade {
+    font-size: 3rem;
+  }
+
+  .projetos-completos {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .github-action {
+    display: flex;
+    gap: 8px;
+  }
+
+  .github-action img {
+    width: 70px;
+  }
+
+  #veja-projetos {
+    gap: 15px;
+  }
+
+  #veja-projetos a {
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  .content-minhaFoto {
+    width: 100%;
+  }
+
+  .content-minhaFoto img {
+    width: 600px;
+  }
+
+  .disponivel {
+    width: 400px;
+    padding: 12px 18px;
+  }
+
+  #disponivel-content {
+    width: 100%;
+  }
+
+  #disponivel-content > p {
+    font-size: 17px;
+  }
+
+  #disponivel-back {
+    width: 40px;
+    height: 35px;
+  }
+
+  #disponivel-children {
+    width: 15px;
+    height: 15px;
+  }
+
+  
 }
