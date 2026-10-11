@@ -822,4 +822,35 @@
   .paragrafo-redesocial {
     font-size: 16px;
   }
+
+  /* FOOTER */
+  .content-footer {
+    padding: 30px;
+  }
+
+  #footer-titulo {
+    font-size: 2rem;
+  }
+
+  #paragrafo-desenvolvedor {
+    font-size: 1.2rem;
+  }
+
+  #footer-descricao {
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .titulo-navegacao {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  #footer-actions,
+  #footer-servicos, #footer-contato {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
