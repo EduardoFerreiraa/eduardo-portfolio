@@ -230,6 +230,7 @@ li.header-contato:hover {
 #veja-projetos a {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: white;
+  animation: entradaInicio 1s ease;
 }
 
 .span-projeto {

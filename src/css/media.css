@@ -1,4 +1,8 @@
 /* Celulares: estilo padrão */
+* {
+  transition: all 0.4s;
+}
+
 .container {
   width: 100%;
 }
@@ -24,7 +28,7 @@
 
   .header-item {
     display: none;
-    padding: 5px 8px;
+    padding: 5px 10px;
   }
 
   /* MAIN */
@@ -75,7 +79,7 @@
   .projetos-completos {
     width: 100%;
     margin-left: 5px;
-    font-size: 10px;
+    font-size: 10.5px;
   }
 
   .github-action {
@@ -118,7 +122,7 @@
   }
 
   #disponivel-content > p {
-    font-size: 13p;
+    font-size: 13px;
   }
 
   #disponivel-back {
@@ -132,7 +136,6 @@
   }
 
   /* SECTION HABILIDADES */
-
   .content-habilidades {
     width: 100%;
     margin: 0 auto;
@@ -205,7 +208,6 @@
   }
 
   /* SECTION PROJETOS */
-
   .content-projetos {
     width: 90%;
     margin: 0 auto;
@@ -256,6 +258,15 @@
     margin-bottom: 25px;
   }
 
+  .informacoes-project > h3 {
+    font-size: 1.6rem;
+  }
+
+  .informacoes-project > p {
+    font-size: 15px;
+  }
+
+  /* SECTION CONTATO */
   .content-contato {
     width: 100%;
     margin: 50px auto;
@@ -331,7 +342,6 @@
   }
 
   /* FOOTER */
-
   .content-footer {
     background-color: #010101;
     padding: 25px;
@@ -377,6 +387,199 @@
     border-bottom: 1px solid rgb(61, 61, 61);
     display: flex;
     flex-direction: column;
+  }
+}
+
+/* Celulares maiores: 400px */
+@media (min-width: 400px) {
+  /* HEADER */
+  #header-titulo {
+    font-size: 14px;
+  }
+
+  #logo {
+    width: 50px;
+  }
+
+  .header-item {
+    display: none;
+    padding: 7px 14px;
+  }
+
+  /* MAIN - CONTENT INÍCIO */
+  #inicio-paragrafo {
+    font-size: 1.1rem;
+  }
+
+  #disponivel-projetos {
+    font-size: 13px;
+    padding: 11px;
+    width: 220px;
+  }
+
+  #inicio-titulo {
+    font-size: 1.8rem;
+  }
+
+  #frase-curta {
+    font-size: 16px;
+  }
+
+  .span-projeto {
+    font-size: 1.6rem;
+  }
+
+  .quantidade {
+    font-size: 2.3rem;
+  }
+
+  .projetos-completos {
+    font-size: 12.5px;
+  }
+
+  .github-action {
+    display: none;
+  }
+
+  #veja-projetos a {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .content-minhaFoto img {
+    width: 425px;
+  }
+
+  .disponivel {
+    padding: 10px;
+    width: 280px;
+  }
+
+  #disponivel-back {
+    width: 30px;
+    height: 30px;
+  }
+
+  #disponivel-children {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* SECTION HABILIDADES */
+  .content-habilidades > h1 {
+    font-size: 1.8rem;
+  }
+
+  .habilidades {
+    margin: 15px;
+  }
+
+  .habilidades-card {
+    height: 190px;
+    padding: 30px;
+  }
+
+  .habilidades-card > h2 {
+    font-size: 19px;
+  }
+
+  .habilidades-card p {
+    font-size: 0.9rem;
+  }
+
+  .icons {
+    width: 50px;
+  }
+
+  .glow {
+    width: 135px;
+    height: 120px;
+  }
+
+  .card-item {
+    padding: 8px 25px;
+  }
+
+  .card-item > p {
+    font-size: 16px;
+  }
+
+  .card-item > img {
+    width: 30px;
+  }
+
+  /* SECTION PROJETOS */
+  #title-projetos > p,
+  .informacoes-project > p {
+    font-size: 16px;
+  }
+
+  #descricao-projetos {
+    font-size: 16px;
+  }
+
+  .cards-project {
+    padding: 5px;
+  }
+
+  .id-project {
+    font-size: 22px;
+  }
+
+  .informacoes-project {
+    padding: 15px;
+  }
+
+  .informacoes-project > h3 {
+    font-size: 1.8rem;
+  }
+
+  /* SECTION CONTATO */
+  #paragrafo-contato {
+    font-size: 1.3rem;
+  }
+
+  #contato-titulo {
+    font-size: 3.4rem;
+  }
+
+  #paragrafo-colaboracoes {
+    font-size: 16px;
+  }
+
+  #action-conversar {
+    padding: 18px;
+    font-size: 15px;
+  }
+
+  .card-redesocial {
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  .titulo-redesocial {
+    font-size: 1.4rem;
+  }
+
+  .paragrafo-redesocial {
+    font-size: 16px;
+  }
+
+  /* FOOTER */
+  #footer-titulo {
+    font-size: 1.8rem;
+  }
+
+  #paragrafo-desenvolvedor {
+    font-size: 1.1rem;
+  }
+
+  #footer-descricao {
+    font-size: 16px;
+  }
+
+  .titulo-navegacao {
+    font-size: 1.5rem;
   }
 }
 
