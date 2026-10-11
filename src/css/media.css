@@ -745,4 +745,39 @@
   .card-item > img {
     width: 30px;
   }
+
+  /* SECTION PROJETOS */
+  .content-projetos {
+    width: 90%;
+  }
+
+  #title-projetos {
+    font-size: 2.7rem;
+  }
+
+  #descricao-projetos {
+    font-size: 18px;
+  }
+
+  .cards-project {
+    padding: 15px;
+  }
+
+  .id-project {
+    font-size: 22px;
+  }
+
+  .informacoes-project {
+    padding: 15px;
+  }
+
+  .informacoes-project > h3 {
+    font-size: 2rem;
+  }
+
+  .informacoes-project > p {
+    font-size: 18px;
+  }
+
+  
 }
