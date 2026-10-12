@@ -320,7 +320,6 @@
   }
 
   .card-redesocial {
-    background-color: #010101;
     width: 100%;
     height: 130px;
     display: flex;
@@ -848,9 +847,301 @@
   }
 
   #footer-actions,
-  #footer-servicos, #footer-contato {
+  #footer-servicos,
+  #footer-contato {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+
+  #header-titulo {
+    font-size: 18px;
+  }
+
+  #logo {
+    width: 60px;
+  }
+
+  #header-list {
+    gap: 25px;
+  }
+
+  .header-item {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  /* MAIN */
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #content-inicio {
+    width: 90%;
+    margin: 250px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .inicio {
+    width: 1000px;
+  }
+
+  #inicio-paragrafo {
+    font-size: 1.2rem;
+  }
+
+  #disponivel-projetos {
+    font-size: 19px;
+    width: 310px;
+  }
+
+  #inicio-titulo {
+    font-size: 4rem;
+  }
+
+  #frase-curta {
+    font-size: 18px;
+  }
+
+  .span-projeto {
+    font-size: 1.8rem;
+  }
+
+  .content-count {
+    gap: 15px;
+    width: 95%;
+  }
+
+  .quantidade {
+    font-size: 4rem;
+  }
+
+  .projetos-completos {
+    font-size: 18px;
+  }
+
+  .github-action {
+    gap: 8px;
+  }
+
+  .github-action > p {
+    font-size: 21px;
+  }
+
+  .github-action img {
+    width: 100px;
+  }
+
+  #veja-projetos {
+    width: 95%;
+    gap: 15px;
+    margin-top: 5px;
+  }
+
+  #veja-projetos a {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .content-minhaFoto {
+    width: 550px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .disponivel {
+    width: 80%;
+    padding: 14px 20px;
+  }
+
+  #disponivel-content > p {
+    font-size: 18px;
+  }
+
+  #disponivel-back {
+    width: 50px;
+    height: 40px;
+  }
+
+  /* SECTION HABILIDADES */
+  .content-habilidades > h1 {
+    text-align: left;
+    margin: 0;
+    padding-left: 100px;
+    font-size: 3.5rem;
+  }
+
+  .habilidades {
+    margin: 25px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .habilidades-card {
+    width: 350px;
+    height: 380px;
+  }
+
+  .habilidades-card > h2 {
+    font-size: 2em;
+  }
+
+  .habilidades-card p {
+    font-size: 1.2rem;
+  }
+
+  .icons {
+    width: 65px;
+  }
+
+  .glow {
+    width: 250px;
+    height: 250px;
+    top: -30px;
+    right: -50px;
+    filter: blur(40px);
+  }
+
+  .card-tambem {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .card-item {
+    width: 190px;
+    padding: 15px 25px;
+  }
+
+  .habilidades-tambem {
+    font-size: 1.2em;
+  }
+
+  .card-item > p {
+    font-size: 20px;
+  }
+
+  .card-item > img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  /* SECTION PROJETOS */
+  .content-projetos {
+    width: 90%;
+  }
+
+  #title-projetos {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  #descricao-projetos {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .cards-project {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 25px;
+  }
+
+  .id-project {
+    font-size: 25px;
+    margin-left: 15px;
+  }
+
+  .image-project {
+    padding: 0;
+    width: 85%;
+  }
+
+  .image-project > img {
+    margin: 15px;
+  }
+
+  .informacoes-project > h3 {
+    font-size: 2.2rem;
+  }
+
+  .informacoes-project > p {
+    font-size: 17px;
+  }
+
+  /* SECTION CONTATO */
+  .contato {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+  }
+
+  #paragrafo-contato {
+    text-align: left;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  #contato-titulo {
+    width: 50%;
+    font-size: 3.5rem;
+  }
+
+  #paragrafo-colaboracoes {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #action-conversar {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  .redes-sociais {
+    margin-top: 25px;
+    gap: 0;
+  }
+
+  .email-whatsapp,
+  .git-linkedin {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .card-redesocial {
+    width: 100%;
+    height: 260px;
+  }
+
+  .titulo-redesocial {
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+
+  .paragrafo-redesocial {
+    font-size: 17px;
   }
 }
