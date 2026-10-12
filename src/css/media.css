@@ -859,6 +859,10 @@
 /* Desktop */
 @media (min-width: 1024px) {
   /* HEADER */
+  .header {
+    padding: 15px 20px;
+  }
+
   #header-titulo {
     font-size: 18px;
   }
@@ -867,8 +871,13 @@
     width: 60px;
   }
 
+  #header-list {
+    gap: 25px;
+  }
+
   .header-item {
-    padding: 5px 15px;
+    font-size: 18px;
+    padding: 10px 15px;
   }
 
   /* MAIN */
