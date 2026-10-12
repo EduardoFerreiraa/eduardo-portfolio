@@ -320,7 +320,6 @@
   }
 
   .card-redesocial {
-    background-color: #010101;
     width: 100%;
     height: 130px;
     display: flex;
@@ -1086,6 +1085,63 @@
   }
 
   .informacoes-project > p {
+    font-size: 17px;
+  }
+
+  /* SECTION CONTATO */
+  .contato {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+  }
+
+  #paragrafo-contato {
+    text-align: left;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  #contato-titulo {
+    width: 50%;
+    font-size: 3.5rem;
+  }
+
+  #paragrafo-colaboracoes {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  #action-conversar {
+    padding: 20px;
+    font-size: 17px;
+  }
+
+  .redes-sociais {
+    margin-top: 25px;
+    gap: 0;
+  }
+
+  .email-whatsapp,
+  .git-linkedin {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .card-redesocial {
+    width: 100%;
+    height: 260px;
+  }
+
+  .titulo-redesocial {
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+
+  .paragrafo-redesocial {
     font-size: 17px;
   }
 }
