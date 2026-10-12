@@ -881,6 +881,11 @@
   }
 
   /* MAIN */
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   #content-inicio {
     width: 90%;
     margin: 280px auto;
@@ -959,25 +964,86 @@
   }
 
   .disponivel {
-    width: 400px;
-    padding: 12px 18px;
-  }
-
-  #disponivel-content {
-    width: 100%;
+    width: 80%;
+    padding: 14px 20px;
   }
 
   #disponivel-content > p {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   #disponivel-back {
-    width: 40px;
-    height: 35px;
+    width: 50px;
+    height: 40px;
   }
 
-  #disponivel-children {
-    width: 15px;
-    height: 15px;
+  /* SECTION HABILIDADES */
+  .content-habilidades > h1 {
+    text-align: left;
+    margin: 0;
+    padding-left: 100px;
+    font-size: 4rem;
   }
+
+  .habilidades {
+    margin: 25px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .habilidades-card {
+    width: 350px;
+    height: 380px;
+  }
+
+  .habilidades-card > h2 {
+    font-size: 2em;
+  }
+
+  .habilidades-card p {
+    font-size: 1.2rem;
+  }
+
+  .icons {
+    width: 65px;
+  }
+
+  .glow {
+    width: 250px;
+    height: 250px;
+    top: -30px;
+    right: -50px;
+    filter: blur(40px);
+  }
+
+  .card-tambem {
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .card-item {
+    width: 190px;
+    padding: 15px 25px;
+  }
+
+  .habilidades-tambem {
+    font-size: 1.2em;
+  }
+
+  .card-item > p {
+    font-size: 20px;
+  }
+
+  .card-item > img {
+    width: 35px;
+    margin-right: 10px;
+  }
+
+  
 }
