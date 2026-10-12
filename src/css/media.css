@@ -888,7 +888,7 @@
 
   #content-inicio {
     width: 90%;
-    margin: 280px auto;
+    margin: 250px auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -982,7 +982,7 @@
     text-align: left;
     margin: 0;
     padding-left: 100px;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .habilidades {
@@ -1045,5 +1045,47 @@
     margin-right: 10px;
   }
 
-  
+  /* SECTION PROJETOS */
+  .content-projetos {
+    width: 90%;
+  }
+
+  #title-projetos {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  #descricao-projetos {
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .cards-project {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 25px;
+  }
+
+  .id-project {
+    font-size: 25px;
+    margin-left: 15px;
+  }
+
+  .image-project {
+    padding: 0;
+    width: 85%;
+  }
+
+  .image-project > img {
+    margin: 15px;
+  }
+
+  .informacoes-project > h3 {
+    font-size: 2.2rem;
+  }
+
+  .informacoes-project > p {
+    font-size: 17px;
+  }
 }
